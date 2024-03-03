@@ -35,7 +35,7 @@ const data = {
     },
       {
           title: "Space is not just stars and planets",
-          description: "Go on a space adventure - it's possible with us!",
+          description: "Go on a space adventure",
           url: "#",
           bgUrl: offerBg2,
           buttonLabel: "Learn more",
@@ -43,7 +43,7 @@ const data = {
       },
       {
           title: "For those who dream of stars ",
-          description: "Go on a space adventure - it's possible with us!",
+          description: "Our offer: make your dream come true",
           url: "#",
           bgUrl: offerBg3,
           buttonLabel: "Learn more",
@@ -51,7 +51,7 @@ const data = {
       },
       {
           title: "Fulfill your fantastic dreams",
-          description: "Go on a space adventure - it's possible with us!",
+          description: "Space has never been so close",
           url: "#",
           bgUrl: offerBg4,
           buttonLabel: "Learn more",

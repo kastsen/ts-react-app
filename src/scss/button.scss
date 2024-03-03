@@ -1,0 +1,46 @@
+@import "variables";
+@import "mixins";
+
+.btn {
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 53px;
+  padding: 0 30px;
+  height: 54px;
+  font-weight: bold;
+  box-shadow: $primary-shadow;
+  display: block;
+  background: transparent;
+
+  &:hover {
+    background: $color-yellow-dark;
+    border-color: $color-yellow-dark;
+  }
+
+  @media (max-width: $tablet - .1px) {
+    height: 32px;
+    line-height: 31px;
+    font-size: 16px;
+  }
+
+  &--yellow-bg {
+    background: #EBFF00;
+    color: #000;
+  }
+
+  &--yellow-border {
+    color: $color-yellow;
+    border: 2px solid $color-yellow;
+    line-height: 52px;
+    @media (max-width: $tablet - .1px) {
+      line-height: 30px;
+    }
+    &:hover {
+      background: transparent;
+      color: $color-yellow-dark;
+    }
+  }
+}

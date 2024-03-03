@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixins";
+
+.info {
+  padding: 0 0 65px;
+  @media (max-width: $tablet - .1px) {
+    padding: 0 0 55px;
+  }
+  &__title {
+    @include fontSize(32px, 24px, 18px);
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    @include fontSize(20px, 16px, 14px);
+    line-height: 160%;
+    opacity: .6;
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    color: $color-yellow;
+    @include fontSize(20px, 16px, 14px);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

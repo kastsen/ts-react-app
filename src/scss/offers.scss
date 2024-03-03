@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixins";
+
+.offers {
+  $columnsPadding: 40px;
+  padding: $columnsPadding 0;
+  @media (max-width: $tablet - .1px) {
+    padding: $columnsPadding 0 calc($columnsPadding - 5px);
+  }
+
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+  }
+
+  &__title {
+    @include fontSize(74px, 40px, 40px);
+
+    @media (min-width: $desktop) {
+      max-width: 60%;
+    }
+  }
+
+  &__category-title {
+    @include font(32px);
+    margin: 20px 0;
+  }
+
+  &__column {
+    flex-direction: column;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    min-height: 350px;
+    flex-basis: 100%;
+    margin: calc($columnsPadding / 2) 0;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: $primary-shadow;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+
+    @include overlay();
+
+    @media (min-width: $desktop) {
+      &:nth-child(2), &:nth-child(3) {
+        flex-basis: calc(50% - $columnsPadding/2);
+        .offers__title {
+          font-size: 46px;
+        }
+      }
+    }
+
+    @media (max-width: $desktop - .1px) and (min-width: $tablet) {
+      flex-basis: calc(50% - $columnsPadding/2);
+    }
+
+  }
+
+  &__content {
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__description {
+    margin: 20px 0;
+    @include fontSize(26px, 26px, 16px);
+    line-height: 120%;
+  }
+
+  &__btn {
+    margin-bottom: 8px;
+  }
+}

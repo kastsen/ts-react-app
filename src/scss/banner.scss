@@ -2,7 +2,7 @@
 @import "mixins";
 
 .banner {
-  @include backgroundCover('../images/bg.png');
+  @include backgroundCover('../images/bg.webp');
 
   //  multiple backgrounds, так было сказано сделать в ТЗ. Для данного макета, лучше добавить бэкграунд к контейнеру с контентом внутри родителя с общим фоном.
   //background:  url('../images/earth_.png') 85% 50% no-repeat, url('../images/bg.png') no-repeat;
@@ -31,9 +31,15 @@
 
   &__title {
     @include fontSize(72px, 48px, 36px);
+    &--colorful {
+      color: $color-pink;
+    }
   }
 
+
   &__content {
+
+    padding: 40px 0;
 
     > *:not(.banner__image) {
       position: relative;
@@ -76,6 +82,10 @@
     font-weight: 800;
     color: $color-white;
     margin: 20px 0;
+
+    &--colorful {
+      color: $color-yellow;
+    }
   }
 
   &__image {

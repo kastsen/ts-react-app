@@ -20,7 +20,8 @@ const data = {
   banner: {
       title: 'Discover the vast expanses of',
       colorfulTitle: 'space',
-      description: 'Where the possibilities are endless!',
+      description: 'Where the possibilities are',
+      colorfulDescription: 'endless!',
       imgUrl: bannerImg,
       buttonLabel: 'Learn more',
   },

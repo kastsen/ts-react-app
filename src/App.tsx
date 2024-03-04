@@ -1,8 +1,8 @@
-import bannerImg from "./images/earth_.png";
-import offerBg1 from "./images/offer-1.png";
-import offerBg2 from "./images/offer-2.png";
-import offerBg3 from "./images/offer-3.png";
-import offerBg4 from "./images/offer-4.png";
+import bannerImg from "./images/earth_.webp";
+import offerBg1 from "./images/offer-1.webp";
+import offerBg2 from "./images/offer-2.webp";
+import offerBg3 from "./images/offer-3.webp";
+import offerBg4 from "./images/offer-4.webp";
 
 import React from 'react';
 import Header from "./components/Header";

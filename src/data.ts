@@ -62,7 +62,9 @@ export const data = {
             'will be filled with incredible impressions, excitement and new discoveries. Our\n' +
             'team of professionals takes care of your safety and comfort so that you can fully\n' +
             'enjoy your adventure in space. We offer various options for space excursions.',
+        collapseDescription: 'Content that can be collapsed/expanded',
         url: '#',
         buttonLabel: 'Read more',
+        collapseButtonLabel: 'Collapse',
     }
 }
